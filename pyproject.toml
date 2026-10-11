@@ -17,6 +17,9 @@ dependencies = [
 [project.scripts]
 code-interpreter-with-ai-error-analysis = "code_interpreter_with_ai_error_analysis:app"
 
+[tool.vercel]
+entrypoint = "src.code_interpreter_with_ai_error_analysis:app"
+
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
