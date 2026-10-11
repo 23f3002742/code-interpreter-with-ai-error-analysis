@@ -1,25 +1,21 @@
 [project]
 name = "code-interpreter-with-ai-error-analysis"
 version = "0.1.0"
-description = "Add your description here"
+description = "Code Interpreter with AI Error Analysis"
 readme = "README.md"
-authors = [
-    { name = "Harsh", email = "23f3002742@ds.study.iitm.ac.in" }
-]
+authors = [{ name = "Harsh", email = "23f3002742@ds.study.iitm.ac.in" }]
 requires-python = ">=3.15"
 dependencies = [
     "fastapi==0.143.0",
     "httpx==0.28.1",
     "pydantic==2.14.0",
+    "ruff==0.17.0",
     "uvicorn==0.54.0",
 ]
-
-[project.scripts]
-code-interpreter-with-ai-error-analysis = "code_interpreter_with_ai_error_analysis:app"
-
-[tool.vercel]
-entrypoint = "src.code_interpreter_with_ai_error_analysis:app"
 
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.vercel]
+entrypoint = "src.code_interpreter_with_ai_error_analysis:app"
